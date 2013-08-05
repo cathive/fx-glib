@@ -1,5 +1,7 @@
 package org.gtk.glib;
 
+import static org.gtk.glib.GLib.guint;
+
 import org.bridj.Pointer;
 
 import java.beans.ConstructorProperties;
@@ -24,7 +26,7 @@ public final class Version implements Comparable<Version> {
     private final int micro;
 
     @ConstructorProperties({"major", "micro", "minor"})
-    private Version(final int major, final int minor, final int micro) {
+    private Version(final @guint int major, final @guint int minor, final @guint int micro) {
         super();
         this.major = major;
         this.minor = minor;
@@ -44,7 +46,7 @@ public final class Version implements Comparable<Version> {
     }
 
     @Override
-    public int compareTo(Version that) {
+    public int compareTo(final Version that) {
         final int maj = this.getMajor() - that.getMajor();
         if (maj != 0) {
             return maj;
