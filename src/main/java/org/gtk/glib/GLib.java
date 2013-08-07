@@ -675,6 +675,14 @@ public final class GLib {
      * @since GLib 2.24
      */
     @Optional
+    @Name("g_variant_get_double")
+    public static native @gdouble double variantGetDouble(Pointer<GVariant> value);
+
+    /**
+     * TODO Documentation
+     * @since GLib 2.24
+     */
+    @Optional
     @Name("g_variant_get_string")
     public static native @gchar Pointer<Byte> variantGetString(Pointer<GVariant> value);
 
@@ -727,7 +735,6 @@ public final class GLib {
     /**
      * @since GLib 2.24
      */
-    @Struct
     @Optional
     @Name("GVariantClass")
     public static enum GVariantClass implements IntValuedEnum {
