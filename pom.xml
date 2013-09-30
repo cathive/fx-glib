@@ -33,7 +33,7 @@
     <parent>
         <groupId>com.cathive</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>2</version>
+        <version>3</version>
     </parent>
 
     <properties/>
@@ -49,7 +49,7 @@
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/cathive/$fx-glib/issues</url>
+        <url>https://github.com/cathive/fx-glib/issues</url>
     </issueManagement>
 
     <developers>
