@@ -188,6 +188,13 @@ public final class GLib {
 
     }
 
+    @Struct
+    @Name("GObject")
+    public static final class GObject extends StructObject {
+        public GObject() { super(); }
+        public GObject(Pointer<GObject> peer) { super(peer); }
+    }
+
     /**
      * GVariant is a variant datatype;
      * it stores a value along with information about the type of that value.
