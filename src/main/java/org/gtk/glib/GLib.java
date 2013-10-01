@@ -174,6 +174,13 @@ public final class GLib {
     @Name("g_intern_static_string")
     public static native @gchar Pointer<Byte> internStaticString(@gchar Pointer<Byte> string);
 
+    @Struct
+    @Name("GCancellable")
+    public static final class GCancellable extends StructObject {
+        public GCancellable() { super(); }
+        public GCancellable(Pointer<GCancellable> peer) { super(peer); }
+    }
+
     @Struct(fieldCount = 3)
     @Name("GError")
     public static final class GError extends StructObject {
